@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeab47;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: rgb(158, 150, 38);
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    color: rgb(121, 10, 102);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.block {
+    background-color: rgb(25, 136, 93);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 40px);
+    /* Дві колонки */
+    text-align: center;
+}
+
+footer {
+    background-color: #da2b2b;
+    color: rgb(28, 151, 145);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .block {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+    }
+}
